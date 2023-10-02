@@ -19,11 +19,6 @@
   WELCOME.................  你好 .................    ПРИВЕТ  .................   MERHABA   .................   مرحبًا   .................   안녕하세요    .................  こんにちは   .................
   </marquee>
 
-  <nav>
-  <a href="/html/">HTML</a> |
-  <a href="/css/">CSS</a> |
-</nav>
-  
 <html lang="en">
 <head>
 <title>Experience</title>
@@ -106,17 +101,23 @@ footer {
   <h2>ᴠɪᴄᴄɪᴇ​​​​​</h2>
 </header>
 
+
+  <script>
+    function showPage(page) {
+      document.querySelector(`#{page}`).style.display = 'block';
+    
 <section>
   <nav>
     <ul>
-      <li><a href="#1">Ecommerce</a></li>
-      <li><a href="#2">Fun</a></li>
-      <li><a href="#3">Education</a></li>
+     <button data-page="ecom">E-commerce</button>
+    <button data-page="fun">For Fun</button>
+    <button data-page="educ">Education</button>
     </ul>
   </nav>
   
   <article>
-    
+
+    <div id:"ecom">
     <h1>
 ██████████████████████████████████████████████████████████
 █▄─▄▄─█─▄▄▄─█─▄▄─█▄─▀█▀─▄█▄─▀█▀─▄█▄─▄▄─█▄─▄▄▀█─▄▄▄─█▄─▄▄─█
@@ -145,7 +146,9 @@ function myFunction() {
 }
 </script>
 
+    </div>
 
+    <div id="fun"
     <h1>
 █████████████████████████████████████████
 █▄─▄▄─█─▄▄─█▄─▄▄▀███▄─▄▄─█▄─██─▄█▄─▀█▄─▄█
@@ -156,7 +159,9 @@ function myFunction() {
     <p>These were just for fun, but they taught me sections, and hashtags and gave me the taste of coding when I was customising text.</p>
     <p>Taught me what websites and pages actually were, and why building a web page takes ages (I spent more than 20 hours on my first page, perfecting every detail!).</p>
 
-    
+    </div>
+
+    <div id="educ">
     <h1>
 ███████████████████████████████████████████████████████
 █▄─▄▄─█▄─▄▄▀█▄─██─▄█─▄▄▄─██▀▄─██─▄─▄─█▄─▄█─▄▄─█▄─▀█▄─▄█
@@ -169,7 +174,8 @@ function myFunction() {
      <p><a href="https://g.co/kgs/SzaFZd">A-LEVEL AQA 1ST - Kevin R Bond</a></p>
      <p><a href="https://g.co/kgs/fQGmTS">A-LEVEL AQA 2ND - Kevin R Bond</a></p>
  <p><a href="https://www.amazon.co.uk/Python-Crash-Course-3Rd-Matthes/dp/1718502702/ref=asc_df_1718502702/?tag=googshopuk-21&linkCode=df0&hvadid=570229818468&hvpos=&hvnetw=g&hvrand=6365820680211953199&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9045109&hvtargid=pla-1654671714701&psc=1&th=1&psc=1">Python Crash Course</a></p>
-  
+
+    </div>
   </article>
 </section>
 
